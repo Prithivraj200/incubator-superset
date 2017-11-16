@@ -278,6 +278,7 @@ function nvd3Vis(slice, payload) {
 
     if ('showLegend' in chart && typeof fd.show_legend !== 'undefined') {
       chart.showLegend(fd.show_legend);
+      chart.legend.margin({top: 10, right:30, left:80, bottom: 20});
     }
 
     let height = slice.height() - 15;
